@@ -1,0 +1,79 @@
+
+    <!doctype html>
+
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./styles.css" />
+      <link rel="stylesheet" type="text/css" href="./blog.css" />
+      <script src="./blog.js"></script>
+      
+       
+    </head>
+
+    <body data-instant-intensity="all" class="primo-page">   
+      <div id="section-tcsru">
+	<div class="columns flex flex-wrap container">
+		<div class="column w-full" id="column-mxinz">
+			<div class="primo-component" id="component-yu0hw">
+				<div id="component-yu0hw" class="w-full"><div class="flex flex-col" id="episodes-yu0hw">   
+        <div class="bg-gray-900 text-gray-300 shadow-xl flex mb-4 rounded" x-data="{ playing: false, progress: 0 }" id="episode-0">
+            <button @click="$refs.ouch[ playing ? 'pause' : 'play' ](); playing = !playing;" class="flex items-center justify-center px-4 transition-colors duration-100 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+                <template x-if="!$refs.ouch.paused">
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                </template>
+                <template x-if="$refs.ouch.paused">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                </template>
+            </button>
+            <div class="border-l border-gray-700 p-6">
+                <h3 class="text-3xl font-serif font-semibold">Ep. 2 - JOURNEY: Where Nick&#x27;s been &amp; is going</h3>
+                <div class="text-xl text-gray-400"><p>“. . . those conversations with you reignited what we’re most passionate about and that’s just being able to connect with people and not judge them, but to give them freedom to question. . . “</p></div>
+                <progress class="w-full h-1 rounded-full overflow-hidden" x-bind:value="progress" max="100"> 32% </progress>
+                <audio class="mt-2 w-full" x-ref="ouch" x-on:timeupdate="progress = $event.target.currentTime / $event.target.duration * 100">
+                      <source src="https://static1.squarespace.com/static/5d24dee19408320001347300/t/5f778fc740fbdd0ce253c04d/1601671356022/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3/original/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio> 
+            </div>
+        </div>
+        <div class="bg-gray-900 text-gray-300 shadow-xl flex mb-4 rounded" x-data="{ playing: false, progress: 0 }" id="episode-1">
+            <button @click="$refs.ouch[ playing ? 'pause' : 'play' ](); playing = !playing;" class="flex items-center justify-center px-4 transition-colors duration-100 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+                <template x-if="!$refs.ouch.paused">
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                </template>
+                <template x-if="$refs.ouch.paused">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                </template>
+            </button>
+            <div class="border-l border-gray-700 p-6">
+                <h3 class="text-3xl font-serif font-semibold">Ep. 1 - CONTEXT: It starts with Ken</h3>
+                <div class="text-xl text-gray-400"><p>“I still call Ken my mentor, even though until recently we haven’t spoken for much of the last decade. “</p></div>
+                <progress class="w-full h-1 rounded-full overflow-hidden" x-bind:value="progress" max="100"> 32% </progress>
+                <audio class="mt-2 w-full" x-ref="ouch" x-on:timeupdate="progress = $event.target.currentTime / $event.target.duration * 100">
+                      <source src="https://static1.squarespace.com/static/5d24dee19408320001347300/t/5f778fc740fbdd0ce253c04d/1601671356022/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3/original/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio> 
+            </div>
+        </div>
+</div></div>
+				<script type="module">
+      const primo = {
+        id: 'yu0hw',
+        data: {"episodes":[{"url":"https://static1.squarespace.com/static/5d24dee19408320001347300/t/5f778fc740fbdd0ce253c04d/1601671356022/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3/original/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3","title":"Ep. 2 - JOURNEY: Where Nick's been & is going","description":"<p>“. . . those conversations with you reignited what we’re most passionate about and that’s just being able to connect with people and not judge them, but to give them freedom to question. . . “</p>"},{"url":"https://static1.squarespace.com/static/5d24dee19408320001347300/t/5f778fc740fbdd0ce253c04d/1601671356022/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3/original/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3","title":"Ep. 1 - CONTEXT: It starts with Ken","description":"<p>“I still call Ken my mentor, even though until recently we haven’t spoken for much of the last decade. “</p>"}],"id":"yu0hw"},
+        fields: [{"id":"bopa2","key":"episodes","label":"Episodes","value":[{"url":"https://static1.squarespace.com/static/5d24dee19408320001347300/t/5f778fc740fbdd0ce253c04d/1601671356022/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3/original/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3","title":"Ep. 2 - JOURNEY: Where Nick's been & is going","description":"<p>“. . . those conversations with you reignited what we’re most passionate about and that’s just being able to connect with people and not judge them, but to give them freedom to question. . . “</p>"},{"url":"https://static1.squarespace.com/static/5d24dee19408320001347300/t/5f778fc740fbdd0ce253c04d/1601671356022/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3/original/Ep.+1++CONTEXT+-+It+starts+with+Ken.mp3","title":"Ep. 1 - CONTEXT: It starts with Ken","description":"<p>“I still call Ken my mentor, even though until recently we haven’t spoken for much of the last decade. “</p>"}],"type":"repeater","fields":[{"id":"kgahg","key":"url","label":"File URL","value":"","type":"text"},{"id":"y3ivx","key":"title","label":"Title","value":"","type":"text"},{"id":"yakpx","key":"description","label":"Description","value":"","type":"content"}]}]
+      }
+      // turn [import _ from 'lodash'] into [import _ from 'https://cdn.skypack.dev/lodash'];
+      import Alpine from 'https://cdn.skypack.dev/alpinejs' 
+    </script>
+			</div>
+		</div>
+	</div>
+</div>
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.js" integrity="sha256-DdSiNPR71ROAVMqT6NiHagLAtZv9EHeByYuVxygZM5g=" crossorigin="anonymous"></script>
+    </body>
+    </html>
+  
